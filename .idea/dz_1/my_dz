@@ -1,0 +1,32 @@
+# Задача 1
+# Задача 1.1.
+
+# Есть строка с перечислением песен
+
+my_favorite_songs = 'Потеряй мгновение оставаясь живым, своего рода сказка, вдохнови меня, новое спасение'
+# Выведите на консоль с помощью индексации строки, последовательно
+#  первый трек, 
+# последний, 
+# второй, 
+# второй с конца
+# Нельзя переопределять my_favorite_songs 
+#  запятая не должна выводиться.
+
+fist_songs = my_favorite_songs.find(',')
+fist_songs = my_favorite_songs[:fist_songs]
+print(fist_songs)
+
+last_songs = my_favorite_songs.rfind(',')
+last_songs = my_favorite_songs[last_songs + 2:]
+print(last_songs)
+
+# second_songs = my_favorite_songs.find(',', fist_songs + 2)
+# second_songs = my_favorite_songs[fist_songs+ 2:second_songs]
+# print(second_songs)
+
+
+# second_from_end_songs = my_favorite_songs.rfind(',', 0, last_songs - 2)
+# second_from_end_songs = my_favorite_songs[second_from_end_songs + 2: last_songs]
+# print(second_from_end_songs)
+
+
